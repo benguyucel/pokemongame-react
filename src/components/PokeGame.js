@@ -27,10 +27,11 @@ const Play = () => {
 const PokeGame = () => {
   const [game, setGame] = useState({});
   //Prepare For FirsPlay
-  const firstPlay = Play();
   useEffect(() => {
+    const firstPlay = Play();
     setGame(() => ({ ...firstPlay }));
   }, []);
+
   //Playagain
   const PlayAgain = () => {
     const playAgain = Play();
